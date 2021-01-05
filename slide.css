@@ -1,0 +1,60 @@
+.slide{
+    width: 100%;
+    height: auto;
+    margin: 15px auto;
+}
+
+.slidePreview{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: block;
+}
+
+.slideBox img{
+    width: 160px;
+    height: 160px;
+}
+
+.move{
+    border:5px solid #fff100;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.move::after{
+    border-color: #fff100 transparent transparent; 
+    border-style: solid solid solid solid; 
+    border-width: 20px; 
+    bottom: -33px;
+ 
+    /* 必須指定，才能顯示內容 */
+    content: "";
+ 
+    height: 0px;
+    left: 20px; 
+ 
+    /* 必須指定，否則會變梯形 */
+    position: absolute;
+ 
+    width: 0px;
+}
+
+.move::before {
+    border-color: #888888 transparent transparent; 
+    border-style: solid solid solid; 
+    border-width: 20px 20px 20px 20px; 
+    bottom: -40px;
+ 
+    /* 必須指定，才能顯示內容 */
+    content: "";
+ 
+    height: 0px;
+    left: 20px; 
+ 
+    /* 必須指定，否則會變梯形 */
+    position: absolute;
+ 
+    width: 0px;
+}

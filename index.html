@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>前端作業</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script src="xhr.js"></script>
+    <script src="slide.js"></script>
+    <link rel="stylesheet" href="slide.css">
+    <link rel="stylesheet" href="resourceRequest.css">
+
+    <div class="slide" name="slice">
+        <div class="slidePreview">
+            <img src="1.jpg" alt="imgPreview" id="previewImg"/>
+        </div>
+        <div class="slideBox">
+            <img class="move" src="1.jpg" id="img1" alt="img1" onclick="setPreview(1)"/>
+            <img src="2.jpg" id="img2" alt="img2" onclick="setPreview(2)"/>
+            <img src="3.jpg" id="img3" alt="img3" onclick="setPreview(3)"/>
+            <img src="4.jpg" id="img4" alt="img4" onclick="setPreview(4)"/>
+            <img src="5.jpg" id="img5" alt="img5" onclick="setPreview(5)"/>
+            <img src="6.jpg" id="img6" alt="img6" onclick="setPreview(6)"/>
+        </div>
+        
+    </div>
+
+    <div class="request" name="dataRequest">
+        <div name="queryBox" class="queryBox">
+            <table>
+                <tr>
+                    <td>
+                        <button type="button" onclick="queryRequest()">查詢使用者資料</button>
+                    </td>
+                    <td>
+                        <div id="showQuery">
+                            
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div name="insertBox" class="insertBox">
+            <table>
+                <tr>
+                    <td>
+                        <p>Name:</p>
+                    </td>
+                    <td>
+                        <input type="text" required=true id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Job:</p>
+                    </td>
+                    <td>
+                        <input type="text" required=true id="job">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="insertRequest()">註冊帳號</button>
+                    </td>
+                    <td>
+                        <p id="showInsert">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+</body>
+
+</html>
